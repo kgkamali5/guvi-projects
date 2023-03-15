@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In and Register Form</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <h1>Registration</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="email" placeholder="mail id">
+                        </div>
+
+                        <div class="input-field">
+                            <input type="password" placeholder="password">
+                        </div>
+                        <p>Forgot password <a href="#">click here!</a></p>
+                    </div>
+                    <div class="btn-field">
+                       <!-- <button type="button"class="disable">Sign in</button>-->
+                       <form action="login.html" get="">
+                       
+                        <button style="display:block; margin: 0 auto;" >Submit</button>
+                     
+                       </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+signinBtn.onclick = function(){
+        nameField.style.maxHeight = "0";
+        title.innerHTML = "Sign In";
+        signinBtn.classList.remove("disable");
+    }
+</script>
+</body>
+</html>
